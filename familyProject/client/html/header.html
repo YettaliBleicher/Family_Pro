@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinnected Header Design</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <header class="header">
+        <!-- כפתור עגול עם אות שם המשתמש בצד שמאל -->
+        <div class="user-container">
+            <button class="user-icon" onclick=toggleUserForm()>א</button>
+            <!-- תפריט פרטי משתמש נפתח -->
+            <div class="user-form" id="userForm">
+                <form>
+                    <label>שם פרטי:</label>
+                    <input id="firstName" type="text" name="firstName">
+                    <label>שם משפחה:</label>
+                    <input id="lastName" type="text" name="lasttName">
+                    <label onclick=changePassword()><p>לעדכון סיסמא</p></label>
+                    <div id="passwordContainer"></div>
+
+                    <button type="button" onclick=updateUser()>שמור</button>
+                    <h2 id="message"></h2>
+                </form>
+            </div>
+        </div>
+
+        <!-- קישורים לעמודים -->
+        <nav class="nav-links">
+            <a href="../html/managerHome.html">דף הבית</a>
+            <a href="../html/about.html">אודות</a>
+            <a onclick="window.location.href='family-tree.html'">תרשים המשפחה</a>
+        </nav>
+
+        <!-- לוגו -->
+        <div class="logo-container">
+            <img src="../pictures/logo.png" alt="Kinnected Logo" class="logo">
+        </div>
+    </header>
+
+    <script src="../js/header.js"></script>
+</body>
+</html>

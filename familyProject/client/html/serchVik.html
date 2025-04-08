@@ -1,0 +1,109 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>חיפוש בויקיפדיה ובגוגל</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="הקלד חיפוש...">
+    <button onclick="searchWikipedia()">חפש בויקיפדיה</button>
+    <button onclick="searchGoogle()">חפש בגוגל</button>
+
+    <script>
+        function searchWikipedia() {
+            const query = document.getElementById("searchInput").value;
+            if (query) {
+                window.open(`https://he.wikipedia.org/wiki/${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+
+        function searchGoogle() {
+            const query = document.getElementById("searchInput").value;
+            if (query) {
+                window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>חיפוש בויקיפדיה ובגוגל</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="הקלד חיפוש...">
+    <button onclick="searchWikipedia()" title="חפש בויקיפדיה">
+        <i class="fas fa-globe"></i>
+    </button>
+    <button onclick="searchGoogle()" title="חפש בגוגל">
+        <i class="fas fa-search"></i>
+    </button>
+
+    <script>
+        function searchWikipedia() {
+            const query = document.getElementById("searchInput").value;
+            if (query) {
+                window.open(`https://he.wikipedia.org/wiki/${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+
+        function searchGoogle() {
+            const query = document.getElementById("searchInput").value;
+            if (query) {
+                window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html lang="he">
+ <head>
+     <meta charset="UTF-8">
+     <title>חיפוש בויקיפדיה ובגוגל</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+         .google-icon {
+             font-size: 1.5em; /* גודל האייקון */
+             position: relative; /* מיקום יחסי עבור האות G */
+         }
+         
+     </style>
+ </head>
+ <body>
+     <input type="text" id="searchInput" placeholder="הקלד חיפוש...">
+     <button onclick="searchWikipedia()" title="חפש בויקיפדיה">
+         <i class="fab fa-wikipedia-w"></i>
+     </button>
+     <button class="google-icon" onclick="searchGoogle()" title="חפש בגוגל" style="position: relative;"><img  src="../pictures/serchGoogle.png" alt="google search">
+         <!-- <i class="fas fa-search" style="color: #4285F4;"></i> -->
+         <!-- <span class="google-g">G</span> -->
+     </button>
+ 
+     <script>
+         function searchWikipedia() {
+             const query = document.getElementById("searchInput").value;
+             if (query) {
+                 window.open(`https://he.wikipedia.org/wiki/${encodeURIComponent(query)}`, '_blank');
+             }
+         }
+ 
+         function searchGoogle() {
+             const query = document.getElementById("searchInput").value;
+             if (query) {
+                 window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+             }
+         }
+     </script>
+ </body>
+ </html>
+ 
+ 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עץ משפחה</title>
+    <link rel="stylesheet" href="../css/family-Tree.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="formContainer" style="display: none;">
+        <form id="familyMemberForm">
+            <button type="button" onclick="closeForm()" class="closeButton" title="סגור">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <h3 id="memberName"></h3>
+            <div id="profile">
+            </div>
+            <div id="parents">
+            </div>
+
+            <div id="formFields">
+            </div>
+            <button type="button" onclick="updateMember()" class="formButton">עריכה</button>
+            <button type="button" onclick="openBiography()" class="formButton">ביוגרפיה</button>
+            <button type="button" onclick="openGallery()" class="formButton">גלריה</button>
+        </form>
+    </div>
+
+    <div id="formContainer2" style="display: none;">
+        <form id="familyMemberForm2">
+            <button type="button" onclick="closeForm()" class="closeButton" title="סגור">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- שדות לטופס -->
+            <label for="firstName">שם פרטי:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">שם משפחה:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <div id="dynamicSelectContainer"></div>
+
+            <label for="birthDate">תאריך לידה:</label>
+            <input type="date" id="birthDate" name="birthDate"><br>
+
+            <label for="deathDate">תאריך פטירה:</label>
+            <input type="date" id="deathDate" name="deathDate"><br>
+
+            <label for="youthName">שם נעורים:</label>
+            <input type="text" id="youthName" name="maidenName"><br>
+
+            <!-- <label for="biography">ביוגרפיה:</label>
+            <textarea id="biography" name="biography" rows="4" cols="50"></textarea><br> -->
+
+            <label for="genderId">מין:</label>
+            <select id="genderId" name="genderId">
+                <option id="3" value="לא ידוע">לא ידוע</option>
+                <option id="1" value="זכר">זכר</option>
+                <option id="2" value="נקבה">נקבה</option>
+            </select><br>
+
+            <label for="statusId">מצב חברתי:</label>
+            <select id="statusId" name="status">
+                <option id="0" value="">ריק</option>
+                <option id="2" value="רווק">רווק</option>
+                <option id="3" value="נשוי">נשוי</option>
+                <option id="4" value="פרוד">פרוד</option>
+                <option id="5" value="גרוש">גרוש</option>
+                <option id="6" value="אלמן">אלמן</option>
+                <option id="7" value="רווקה">רווקה</option>
+                <option id="8" value="נשואה">נשואה</option>
+                <option id="9" value="פרודה">פרודה</option>
+                <option id="10" value="גרושה">גרושה</option>
+                <option id="11" value="אלמנה">אלמנה</option>
+            </select><br>
+
+
+
+            <label id="isAlive">חי:</label>
+            <input type="radio" id="aliveYes" name="alive" value="כן" checked>
+            <label for="aliveYes">כן</label>
+            <input type="radio" id="aliveNo" name="alive" value="לא">
+            <label for="aliveNo">לא</label><br>
+
+            <label for="birthCountry">ארץ לידה:</label>
+            <input type="text" id="birthCountry" name="birthCountry"><br>
+
+            <button type="button" onclick="checkFunctionToOpen()" class="formButton">הוספה</button>
+            <button type="button" onclick="closeForm()" class="formButton">ביטול</button>
+        </form>
+    </div>
+
+    <div id="svgContainer">
+        <!-- <svg id="familyTree" width="2000" height="2000"></svg> -->
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script  src="../js/family-Tree.js"></script>
+</body>
+
+</html>

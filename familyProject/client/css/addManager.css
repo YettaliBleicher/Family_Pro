@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* צבע תכלת עדין */
+    direction: rtl; /* כיוון מימין לשמאל */
+}
+
+/* #main{
+    align-items: center;
+} */
+#main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* אם יש צורך, כדי שהמיכל יהיה בגובה מלא */
+    width: 100%;
+    border: 200px;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffffff;
+    /* margin-top: 200px; */
+    /* padding: 20px; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: right; /* יישור הטקסט לימין */
+}
+
+h1 {
+    color: #ff69b4; /* ורוד פוקסיה */
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+    border: 1px solid #87cefa; /* צבע תכלת */
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right; /* יישור הטקסט בתוך שדה החיפוש לימין */
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    align-items: flex-end; /* יישור תיבות הסימון לצד ימין */
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f0f8ff;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #87cefa; /* צבע תכלת */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* יישור הטקסט במרכז הכפתור */
+}
+.header{
+    width:fit-content;
+}

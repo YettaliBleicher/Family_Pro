@@ -1,0 +1,99 @@
+.background-slideshow {
+    position: absolute; /* שינוי מ-fixed ל-absolute */
+    top: 70px; /* גובה שמתאים לגובה ה-header */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px); /* כדי שהרקע יתפוס את כל הגובה מתחת להדר */
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.background-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.background-slideshow img.active {
+    opacity: 0.4;
+}
+/* סגנונות כלליים */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* עיצוב HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #b3e5fc, #ff80ab);
+    color: #fff;
+}
+
+/* עיצוב לוגו */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dea5a5;
+}
+p{
+    color: #e57373;
+}
+/* סגנון כללי לכפתורים */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 260px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #f9acc6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+    border: 2px solid #d16e8d; /* ורוד כהה יותר */
+}
+
+.button:hover {
+    background-color: #e57373;
+    transform: scale(1.05);
+}

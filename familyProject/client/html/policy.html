@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדיניות פרטיות - Kinnected</title>
+    <link rel="stylesheet" href="../css/policy.css">
+</head>
+<body>
+    <!-- רקע תמונות מתחלפות -->
+    <div class="background-slideshow">
+        <img src="image1.jpg" alt="Background Image 1" class="active">
+        <img src="image2.jpg" alt="Background Image 2">
+        <img src="image3.jpg" alt="Background Image 3">
+    </div>
+
+    <!-- תוכן העמוד -->
+    <div class="about-container">
+        <h1>מדיניות פרטיות</h1>
+        <p>ברוכים הבאים ל-<span class="highlight">Kinnected</span>, הפלטפורמה המשפחתית המקיפה שלנו. הפרטיות שלכם חשובה לנו, ואנו מחויבים לשמירה על פרטיות המידע האישי שאתם חולקים איתנו. מדיניות זו מתארת את סוגי המידע שאנו אוספים וכיצד אנו משתמשים ומגנים עליו.</p>
+        
+        <h2>איסוף מידע</h2>
+        <p>בעת שימוש באתר, אנו עשויים לאסוף סוגי מידע שונים כגון:</p>
+        <ul>
+            <li>מידע מזהה אישי: שם, כתובת דוא"ל, מספר טלפון, תאריך לידה ועוד.</li>
+            <li>תמונות וקבצים משפחתיים: תמונות, מסמכים, ופריטים היסטוריים שחשוב לכם לשמור בעץ המשפחתי.</li>
+            <li>נתוני גלישה: מידע על דפדפן האינטרנט, כתובת IP וסטטיסטיקות שימוש כלליות.</li>
+        </ul>
+        
+        <h2>שימוש במידע</h2>
+        <p>אנו משתמשים במידע שנאסף למטרות הבאות:</p>
+        <ul>
+            <li>ניהול ושיפור חוויית המשתמש באתר.</li>
+            <li>שמירת פרטי קשר ותמונות כדי לבנות עץ משפחתי ולהתחבר עם קרובי משפחה.</li>
+            <li>מתן תמיכה טכנית ופתרון בעיות.</li>
+        </ul>
+        
+        <h2>שמירה ואבטחת מידע</h2>
+        <p>אנו נוקטים באמצעים טכנולוגיים וארגוניים מתקדמים לשמירה על אבטחת המידע האישי שלכם. המידע נשמר בשרתי ענן מאובטחים, ונעשה שימוש בטכנולוגיות הצפנה מתקדמות להגנה על הנתונים.</p>
+        
+        <h2>זכויות המשתמשים</h2>
+        <p>למשתמשים באתר יש את הזכות לגשת למידע האישי שלהם, לעדכן אותו ולבקש מחיקה במידת הצורך. אנו מכבדים את פרטיותכם ומחויבים לעמוד בדרישות החוק בנוגע להגנה על מידע.</p>
+        
+        <div class="call-to-action">
+            <p>אנו מזמינים אתכם לפנות אלינו בכל שאלה בנושא מדיניות הפרטיות.</p>
+        </div>
+    </div>
+
+    <!-- קוד JavaScript להחלפת תמונות רקע -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.background-slideshow img');
+        
+        function showNextSlide() {
+            slides[slideIndex].classList.remove('active');
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+        
+        setInterval(showNextSlide, 5000); // החלפת תמונה כל 5 שניות
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Editor</title>
+    <link rel="stylesheet" href="../css/biography.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="biography-container">
+        <div id="search-option">
+        <input type="text" id="searchInput" placeholder="הקלד חיפוש...">
+        <button class="search" onclick="searchWikipedia()" title="חפש בויקיפדיה">
+            <i class="fab fa-wikipedia-w"></i>
+        </button>
+        <button class="search"  onclick="searchGoogle()" title="חפש בגוגל" style="position: relative;"><img  src="../pictures/serchGoogle.png" alt="google search">
+        </button>
+    </div>
+
+    <lable id="memberName"></lable>
+        <div id="biographyDisplay" contenteditable="false" class="biography-display">
+            <!-- ביוגרפיה תוצג כאן -->
+        </div>
+        <div class="editor-container hidden">
+            <div class="toolbar">
+                <!-- ComboBox לבחירת גודל פונט -->
+                <select id="fontSize" onchange="setFontSize(this.value)">
+                    <option value="3">גודל טקסט</option>
+                    <option value="1">8</option>
+                    <option value="2">10</option>
+                    <option value="3">12</option>
+                    <option value="4">14</option>
+                    <option value="5">18</option>
+                    <option value="6">24</option>
+                    <option value="7">36</option>
+                </select>
+
+                <!-- ComboBox לבחירת סוג פונט -->
+                <select id="fontName" onchange="setFontName(this.value)">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+
+                <!-- הכפתורים הקיימים נשארים ללא שינוי -->
+                <button onclick="formatText('bold')"><i class="fas fa-bold"></i></button>
+                <button onclick="formatText('italic')"><i class="fas fa-italic"></i></button>
+                <button onclick="formatText('underline')"><i class="fas fa-underline"></i></button>
+                <button onclick="formatText('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+                <button onclick="formatText('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+                <button onclick="formatText('justifyLeft')"><i class="fas fa-align-left"></i></button>
+                <button onclick="formatText('justifyCenter')"><i class="fas fa-align-center"></i></button>
+                <button onclick="formatText('justifyRight')"><i class="fas fa-align-right"></i></button>
+                <input type="color" id="textColor" title="Text Color" onchange="setTextColor(this.value)">
+                <input type="color" id="highlightColor" title="Highlight Color"
+                    onchange="setHighlightColor(this.value)">
+            </div>
+            <div id="editor" contenteditable="true" class="text-editor">
+                Write your text here...
+            </div>
+            <button id="saveButton" onclick="saveContentToDatabase()">שמור</button>
+        </div>
+        <button id="editButton" onclick="toggleEdit()">ערוך ביוגרפיה</button>
+    </div>
+
+    <script src="../js/biography.js"></script>
+</body>
+
+</html>

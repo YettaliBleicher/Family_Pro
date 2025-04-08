@@ -1,0 +1,246 @@
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#style {
+    /* position: relative; */
+    /* right: 35%; */
+    /* font-size: 16px; */
+    /* margin-top: 10px; */
+    /* padding: 15px; */
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    color: white;
+    background-color: #87cefa; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+#style:hover {
+    background-color: #ff69b4; 
+}
+#style:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff69b4;
+}
+svg {
+    justify-content: center; 
+    align-items: center; 
+    width: 200%;
+    height: 100%;
+
+}
+#svgContainer {
+    position: relative; 
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+#formContainer, #formContainer2 {
+    position: absolute; 
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10; 
+    width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    direction: rtl;
+}
+
+#svgContainer.inactive {
+    opacity: 0.3; 
+}
+
+
+
+.node {
+    fill: white;
+    stroke-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #007BFF;
+}
+
+.node:hover {
+    fill: #007BFF;
+    stroke: #ffffff;
+}
+
+.link {
+    stroke: #007BFF;
+    stroke-width: 2px;
+    stroke-dasharray: 3 3;
+}
+
+.linkPartner {
+    stroke: #fb4188;
+    stroke-width: 2px;
+    stroke-dasharray: 3 3;
+}
+
+.linkPrevPartner {
+    stroke: #aa6a8c;
+    stroke-width: 2px;
+    stroke-dasharray: 3 3;
+}
+.familyGroup {
+    transform-origin: center;
+    background-image: url("../pictures/profile2.jpg");
+}
+
+rect {
+    stroke: #007BFF;
+    stroke-width: 2px;
+    fill: lightgray;
+}
+
+circle {
+    stroke: #007BFF;
+    stroke-width: 2px;
+}
+
+.nameLabel {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.editButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+}
+
+.editButton:hover {
+    opacity: 0.6;
+}
+
+
+.actionButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #7a6f6f;
+    border: 1px solid #007BFF;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+#familyMemberForm,
+#familyMemberForm2 {
+    font-family: Arial, sans-serif;
+
+}
+
+
+#familyMemberForm label,
+#familyMemberForm2 label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 0.5cm;
+}
+
+#familyMemberForm input,
+#familyMemberForm select,
+#familyMemberForm textarea,
+#familyMemberForm2 input,
+#familyMemberForm2 select,
+#familyMemberForm2 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formButton {
+    position: relative;
+    right: 35%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #87cefa; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.formButton:hover {
+    background-color: #ff69b4; 
+}
+.formButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff69b4;
+}
+
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    right: 90%;
+    top: 15%;
+}
+
+.closeButton svg {
+    width: 24px;
+    height: 24px;
+    stroke: #007BFF;
+}
+
+.closeButton:hover svg {
+    stroke: #ff0000;
+}
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.image-container {
+    border: 2px solid #007BFF; 
+    padding: 5px;
+    display: inline-block;
+}
+
+.image-preview {
+    max-width: 200px;  
+    max-height: 200px; 
+}
+#profile, #memberName {
+    display: block;
+    margin: 0 auto;
+    text-align: center; /* אם יש טקסט באלמנטים */
+}

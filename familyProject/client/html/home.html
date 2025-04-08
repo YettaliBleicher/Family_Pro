@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinnected Header Design</title>
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <!-- כפתור עגול עם אות שם המשתמש בצד שמאל -->
+        <div class="user-container">
+           <a href="../html/login.html">Log in</a>
+        </div>
+
+        <!-- קישורים לעמודים -->
+        <nav class="nav-links">
+            <a href="../html/home.html">דף הבית</a>
+            <a href="../html/about.html">אודות</a>
+        </nav>
+
+        <!-- לוגו -->
+        <div class="logo-container">
+            <img src="../pictures/logo.png" alt="Kinnected Logo" class="logo">
+            <a href="../html/home.html"></a>
+        </div>
+    </header>
+    <main>
+        <div class="background-slideshow">
+            <img src="../pictures/pic1.jpg" class="active" alt="Background Image 1">
+            <img src="../pictures/pic2.png" alt="Background Image 2">
+            <img src="../pictures/pic3.png" alt="Background Image 3">
+            <img src="../pictures/pic4.png" alt="Background Image 3">
+        </div>
+        <div class="button-container">
+            <a class="button" onclick=newFamily()> ליצירת עץ משפחה</a>
+            <a class="button"onclick=existFamily()>כניסה למשפחה קיימת</a>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-address">
+            <p>כתובת החברה: רחוב הזית 13 תל אביב</p>
+        </div>
+        <div class="footer-logo">
+            <img src="../pictures/logo.png" alt="Kinnected Logo" class="logo">
+            <a href="../html/home.html"></a>
+        </div>
+        <div class="footer-link">
+            <a href="../html/policy.html">מדיניות פרטיות</a>
+        </div>
+    </footer>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>

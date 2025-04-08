@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Family Member</title>
+    <link rel="stylesheet" href="../css/updateMember.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>עדכון פרטי בן משפחה</h1>
+
+        <form id="updateMemberForm">
+
+            <label for="id">מספר מזהה לעדכון:</label>
+            <input type="text" id="familyMemberId" class="input-field" placeholder="הכנס מספר מזהה">
+            <p class="existError" id="existMember"></p>
+
+
+            <label for="firstName">שם פרטי:</label>
+            <input type="text" id="firstName" class="input-field" placeholder="הכנס שם פרטי">
+
+            <label for="lastName">שם משפחה:</label>
+            <input type="text" id="lastName" class="input-field" placeholder="הכנס שם מפחה">
+
+            <label for="birthDate">תאריך לידה:</label>
+            <input type="date" id="birthDate" class="input-field">
+
+            <label for="deathDate">תאריך פטירה:</label>
+            <input type="date" id="deathDate" class="input-field">
+
+            <label for="youthName">שם נעורים:</label>
+            <input type="text" id="youthName" class="input-field" placeholder="הכנס שם נעורים">
+
+            <label for="gender">מין:</label>
+            <select id="genderId" name="gender" class="input-field">
+                <option value="0"></option>
+                <option value="3">3 - לא ידוע</option>
+                <option value="1">1 - זכר</option>
+                <option value="2">2 - נקבה</option>
+            </select><br>
+
+            <label for="status">מצב חברתי:</label>
+            <select id="statusId" name="status" class="input-field">
+                <option value="0"></option>
+                <option value="2">2 - רווק</option>
+                <option value="3">3 - נשוי</option>
+                <option value="4">4 - פרוד</option>
+                <option value="5">5 - גרוש</option>
+                <option value="6">6 - אלמן</option>
+                <option value="7">7 - רווקה</option>
+                <option value="8">8 - נשואה</option>
+                <option value="9">9 - פרודה</option>
+                <option value="10">10 - גרושה</option>
+                <option value="11">11 - אלמנה</option>
+            </select><br>
+
+            <label for="isAlive">חיים:</label>
+            <label for="aliveYes" class="radio-label">כן</label>
+            <input type="radio" id="aliveYes" name="alive" value="כן" checked class="radio-input">
+            
+            <label for="aliveNo" class="radio-label">לא</label>
+            <input type="radio" id="aliveNo" name="alive" value="לא" class="radio-input">
+
+            <label for="birthCountry">ארץ לידה:</label>
+            <input type="text" id="birthCountry" class="input-field" placeholder="הכנס ארץ לידה">
+
+            <button type="button" onclick=updateMember() class="submit-btn">עדכון</button>
+
+
+        </form>
+    </div>
+    <script src="../js/updateMember.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="signUpForm">
+            <h1>Sign Up</h1>
+            <div class="input-box">
+                <input type="text" id="firstName" placeholder="First name" required />
+                <span class="icon">👤</span>
+            </div>
+            <div class="input-box">
+                <input type="text" id="lastName" placeholder="Last name" required />
+                <span class="icon">👤</span>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email" required />
+                <span class="icon">📧</span>
+                <p class="existError" id="checkEmail"></p>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required />
+                <span class="icon">🔒</span>
+                <p class="existError" id="checkPassword"></p>
+            </div>
+            <div class="input-box">
+                <input type="password" id="vertify" placeholder="Verify Password" required />
+                <span class="icon">🔒</span>
+            </div>
+            <label>הכנס סיסמת משפחה</label>
+            <div class="input-box">
+                <input type="familypassword" id="familyPassword" placeholder="Family Password" required />
+                <span class="icon">🔒</span>
+                <p class="existError" id="checkFamilyPassword"></p>
+            </div>
+            <div id="vertifyFamilyPassword" class="input-box">
+                <!-- <input type="Familypassword" id="familyvertify" placeholder="Verify Family Password" required />
+                <span class="icon">🔒</span> -->
+            </div>
+            
+            <div class="remember-forgot">
+                <label><input type="checkbox" /> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="button" onclick=signUp()>Sign Up</button>
+            <div class="register-link">
+                <p>Already have an account?</p>
+                <a href="../html/logIn.html">Log In</a>
+            </div>
+            <h2 id="message"></h2>
+        </form>
+    </div>
+    <script src="../js/signUp.js"></script> <!-- קישור לקובץ ה-JavaScript -->
+</body>
+</html>

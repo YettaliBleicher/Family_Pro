@@ -1,0 +1,193 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #b3e5fc, #ff80ab);
+    color: #fff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.footer-address, .footer-link {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    color: #e57373;
+} */
+
+/* סגנונות כלליים */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #b3e5fc, #ff80ab);
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dea5a5;
+}
+
+.user-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.background-slideshow {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.background-slideshow img.active {
+    opacity: 0.4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 260px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #f9acc6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+    border: 2px solid #d16e8d;
+}
+
+.button:hover {
+    background-color: #e57373;
+    transform: scale(1.05);
+}
+
+/* עיצוב FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #b3e5fc, #ff80ab);
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-address, .footer-link {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    color: #e57373;
+}
+
+p {
+    color: #e57373;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול משתמשים במשפחה</title>
+    <link rel="stylesheet" href="../css/addManager.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ניהול משתמשים במשפחה</h1>
+        <input type="text" id="searchInput" placeholder="חפש משתמש..." oninput="filterUsers()">
+        <ul id="userList" class="user-list"></ul>
+        <button class="button" onclick="setAdmins()">הגדר כמנהלים</button>
+    </div>
+    <script src="../js/addManager.js"></script>
+</body>
+</html>
